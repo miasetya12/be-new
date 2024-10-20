@@ -1,7 +1,0 @@
-include README.md
-include LICENSE.md
-recursive-include doc *
-recursive-include examples *
-recursive-include surprise *.pyx
-recursive-exclude surprise *.c
-recursive-exclude surprise *.so
