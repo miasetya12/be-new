@@ -24,11 +24,40 @@ Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
 Classifier: Topic :: Scientific/Engineering :: Information Analysis
 Classifier: Topic :: Text Processing :: Linguistic
 Requires-Python: >=3.8
-Provides-Extra: distributed
-Provides-Extra: test-win
-Provides-Extra: test
-Provides-Extra: docs
 License-File: COPYING
+Requires-Dist: numpy<2.0,>=1.18.5
+Requires-Dist: scipy<1.14.0,>=1.7.0
+Requires-Dist: smart_open>=1.8.1
+Provides-Extra: distributed
+Requires-Dist: Pyro4>=4.27; extra == "distributed"
+Provides-Extra: test-win
+Requires-Dist: pytest; extra == "test-win"
+Requires-Dist: pytest-cov; extra == "test-win"
+Requires-Dist: testfixtures; extra == "test-win"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: testfixtures; extra == "test"
+Requires-Dist: visdom!=0.1.8.7,>=0.1.8; extra == "test"
+Provides-Extra: docs
+Requires-Dist: pytest; extra == "docs"
+Requires-Dist: pytest-cov; extra == "docs"
+Requires-Dist: testfixtures; extra == "docs"
+Requires-Dist: Pyro4>=4.27; extra == "docs"
+Requires-Dist: visdom!=0.1.8.7,>=0.1.8; extra == "docs"
+Requires-Dist: sphinx==5.1.1; extra == "docs"
+Requires-Dist: sphinx-gallery==0.11.1; extra == "docs"
+Requires-Dist: sphinxcontrib.programoutput==0.17; extra == "docs"
+Requires-Dist: sphinxcontrib-napoleon==0.7; extra == "docs"
+Requires-Dist: matplotlib; extra == "docs"
+Requires-Dist: memory_profiler; extra == "docs"
+Requires-Dist: annoy; extra == "docs"
+Requires-Dist: Pyro4; extra == "docs"
+Requires-Dist: scikit-learn; extra == "docs"
+Requires-Dist: nltk; extra == "docs"
+Requires-Dist: testfixtures; extra == "docs"
+Requires-Dist: statsmodels; extra == "docs"
+Requires-Dist: pandas; extra == "docs"
 
 
 ==============================================
