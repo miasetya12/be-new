@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./scikit-surprise-1.1.3"
+    ]
+}

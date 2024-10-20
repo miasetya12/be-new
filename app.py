@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
-from pymongo import MongoClient
+from pymongo import MongoClient # type: ignore
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from bson.json_util import dumps
-from bson.objectid import ObjectId  # Import ObjectId to handle MongoDB Object IDs
+from bson.json_util import dumps # type: ignore
+from bson.objectid import ObjectId  # type: ignore # Import ObjectId to handle MongoDB Object IDs
 from gensim.models import Word2Vec
 import numpy as np
 from surprise import Dataset, Reader, SVD, accuracy
