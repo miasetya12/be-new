@@ -72,6 +72,10 @@ surprise/similarities.c
 surprise/similarities.pyx
 surprise/trainset.py
 surprise/utils.py
+surprise/prediction_algorithms/co_clustering.c
+surprise/prediction_algorithms/matrix_factorization.c
+surprise/prediction_algorithms/optimize_baselines.c
+surprise/prediction_algorithms/slope_one.c
 surprise/model_selection/__init__.py
 surprise/model_selection/search.py
 surprise/model_selection/split.py
