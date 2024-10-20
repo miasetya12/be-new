@@ -1,0 +1,8 @@
+name: app  # Ganti dengan nama lingkungan yang diinginkan
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.12  # Versi Python yang diinginkan
+  - flask
+  - gunicorn
+  - scikit-surprise  # Library Surprise
